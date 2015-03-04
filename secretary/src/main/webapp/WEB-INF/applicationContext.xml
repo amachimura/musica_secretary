@@ -40,12 +40,12 @@
         <property name="suffix" value=".vm"/>
     </bean>
 	
-
+<!--
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp"></property>
 	</bean>
-
+-->
    	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<property name="jndiName" value="java:comp/env/jdbc/webeditor" />
 	</bean>
