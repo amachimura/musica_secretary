@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="-webkit-text-size-adjust:none;">
+<head>
+
+	#if($vm_key_use_debug)
+		$vm_key_debug_script
+	#end
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>$vm_key_page_title</title>
+
+	## iOS用ホーム画面追加用アイコン
+	$vm_key_icon_image
+
+	<!-- CSS -->
+	$vm_key_csss
+
+	<!-- JS -->
+	$vm_key_scripts
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery.dropotron.min.js"></script>
+	<script src="lib/jquery/jquery.scrolly.min.js"></script>
+	<script src="lib/jquery/jquery.onvisible.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		<link rel="stylesheet" href="css/style-noscript.css" />
+	</noscript>
+
+</head>
+<body class="homepage">
+
+	<div id="page" data-role="page" data-title="$vm_key_page_title">
+	
+	#if($vm_key_contents_template)
+	#parse($vm_key_contents_template)
+	#end
+
+	</div>
+	
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	fastClick("body");
+});
+</script>
+</body>
+</html>
