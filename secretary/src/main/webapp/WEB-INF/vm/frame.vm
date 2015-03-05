@@ -10,32 +10,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
 	<title>$vm_key_page_title</title>
 
-	## iOS用ホーム画面追加用アイコン
-	$vm_key_icon_image
-
 	<!-- CSS -->
 	$vm_key_csss
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-desktop.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
+	<link rel="stylesheet" href="/musica-secretary/css/login/login.css" />
 
 	<!-- JS -->
 	$vm_key_scripts
-	<script src="lib/jquery/jquery.min.js"></script>
-	<script src="lib/jquery/jquery.dropotron.min.js"></script>
-	<script src="lib/jquery/jquery.scrolly.min.js"></script>
-	<script src="lib/jquery/jquery.onvisible.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-desktop.css" />
-		<link rel="stylesheet" href="css/style-noscript.css" />
-	</noscript>
+	<script type="text/javascript" src="/musica-secretary/lib/jquery/jquery.min.js"></script>
+	<script src="/musica-secretary/lib/jquery/jquery.dropotron.min.js"></script>
+	<script src="/musica-secretary/lib/jquery/jquery.scrolly.min.js"></script>
+	<script src="/musica-secretary/lib/jquery/jquery.onvisible.min.js"></script>
+	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
+	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
+	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
+	
 
 </head>
 <body class="homepage">
 
 	<div id="page" data-role="page" data-title="$vm_key_page_title">
+	
+	<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="index.html" id="logo">Musica Secretary</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li style="white-space: nowrap;"><a href="index.html">Home</a></li>
+							<li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+								<a href="">Dropdown</a>
+								
+							<ul class="" style="-webkit-user-select: none; display: none; position: absolute;">
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Lorem ipsum dolor</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Magna phasellus</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Etiam dolore nisl</a></li>
+									<li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+										<a href="" style="display: block;">And a submenu …</a>
+										<ul class="dropotron" style="-webkit-user-select: none; display: none; position: absolute;">
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Lorem ipsum dolor</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Phasellus consequat</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Magna phasellus</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Etiam dolore nisl</a></li>
+										</ul>
+									</li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Veroeros feugiat</a></li>
+								</ul></li>
+							<li style="white-space: nowrap;"><a href="left-sidebar.html">Left Sidebar</a></li>
+							<li style="white-space: nowrap;"><a href="right-sidebar.html">Right Sidebar</a></li>
+							<li style="white-space: nowrap;"><a href="no-sidebar.html">No Sidebar</a></li>
+						</ul>
+					</nav>
+
+			</div>
 	
 	#if($vm_key_contents_template)
 	#parse($vm_key_contents_template)
