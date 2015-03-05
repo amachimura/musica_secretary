@@ -11,15 +11,21 @@
 	<title>$vm_key_page_title</title>
 
 	<!-- CSS -->
-	$vm_key_csss
+	#if($vm_key_csss)
+		$vm_key_csss
+	#end
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
-	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-desktop.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
-	<link rel="stylesheet" href="/musica-secretary/css/login/login.css" />
+	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/musica-secretary/css/frame/frame.css" />
+	<link rel="stylesheet" href="/musica-secretary/css/menu/menu.css" />
 
 	<!-- JS -->
-	$vm_key_scripts
+	#if($vm_key_scripts)
+		$vm_key_scripts
+	#end
 	<script type="text/javascript" src="/musica-secretary/lib/jquery/jquery.min.js"></script>
 	<script src="/musica-secretary/lib/jquery/jquery.dropotron.min.js"></script>
 	<script src="/musica-secretary/lib/jquery/jquery.scrolly.min.js"></script>
@@ -27,6 +33,7 @@
 	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
+	<script src="/musica-secretary/lib/bootstrap/js/bootstrap.min.js"></script>
 	
 
 </head>
@@ -39,23 +46,22 @@
 				<!-- Inner -->
 					<div class="inner">
 						<header>
-							<h1><a href="index.html" id="logo">Musica Secretary</a></h1>
+							<h2><a href="index.html" id="logo">Musica Secretary</a></h2>
 						</header>
 					</div>
 				
 				<!-- Nav -->
-					<nav id="nav">
+					<nav id="nav" class="frame_nav">
 						<ul>
 							<li style="white-space: nowrap;"><a href="index.html">Home</a></li>
 							<li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
-								<a href="">Dropdown</a>
-								
+								<a href="">Dropdown</a>						
 							<ul class="" style="-webkit-user-select: none; display: none; position: absolute;">
 									<li style="white-space: nowrap;"><a href="#" style="display: block;">Lorem ipsum dolor</a></li>
 									<li style="white-space: nowrap;"><a href="#" style="display: block;">Magna phasellus</a></li>
 									<li style="white-space: nowrap;"><a href="#" style="display: block;">Etiam dolore nisl</a></li>
 									<li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
-										<a href="" style="display: block;">And a submenu �c</a>
+										<a href="" style="display: block;">And a submenu �c</a>
 										<ul class="dropotron" style="-webkit-user-select: none; display: none; position: absolute;">
 											<li style="white-space: nowrap;"><a href="#" style="display: block;">Lorem ipsum dolor</a></li>
 											<li style="white-space: nowrap;"><a href="#" style="display: block;">Phasellus consequat</a></li>
@@ -65,16 +71,27 @@
 									</li>
 									<li style="white-space: nowrap;"><a href="#" style="display: block;">Veroeros feugiat</a></li>
 								</ul></li>
-							<li style="white-space: nowrap;"><a href="left-sidebar.html">Left Sidebar</a></li>
-							<li style="white-space: nowrap;"><a href="right-sidebar.html">Right Sidebar</a></li>
-							<li style="white-space: nowrap;"><a href="no-sidebar.html">No Sidebar</a></li>
 						</ul>
 					</nav>
 
 			</div>
 	
 	#if($vm_key_contents_template)
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-9">
 	#parse($vm_key_contents_template)
+	</div>
+	<div class="col-sm-3">
+	<div>
+		<header>
+			<h3><a href="#">現在の進捗</a></h3>
+		</header>
+		<p>演奏会まであと x 日</p>							
+		</div>
+	</div>
+	</div>
+	</div>
 	#end
 
 	</div>
