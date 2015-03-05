@@ -1,5 +1,7 @@
 package com.machworks.musicasecretary.controller;
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.MediaType;
@@ -24,7 +26,11 @@ public class LoginController {
 	@RequestMapping(value="/", method = RequestMethod.POST)
 	public ModelAndView login(HttpServletRequest req) {
 		if(confirmLogin(req)) {
-		return new ModelAndView("frame");
+			try {
+				return new ModelAndView(sendNextPage(req, "/menu"));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		return new ModelAndView(getVmName());
 	}
@@ -36,4 +42,16 @@ public class LoginController {
 	private String getVmName() {
 		return "login";
 	}
+
+	/**
+	 * 画面遷移させます
+	 * @param req
+	 * @param pageUrl
+	 * @return
+	 * @throws IOException
+	 */
+	private String sendNextPage(HttpServletRequest req, String pageUrl) throws IOException {
+		return "redirect:" + req.getServletPath() + pageUrl;
+	}
+
 }
