@@ -17,6 +17,11 @@
 	<mvc:annotation-driven />
 	<mvc:resources location="/bootstrap/" mapping="/bootstrap/**" />
 	<mvc:resources location="/images/" mapping="/images/**" />
+	<mvc:resources location="/css/" mapping="/css/**" />
+	<mvc:resources location="/js/" mapping="/js/**" />
+	<mvc:resources location="/lib/" mapping="/lib/**" />
+	<mvc:resources location="/fonts/" mapping="/fonts/**" />
+	<mvc:resources location="/heliosdefault/" mapping="/heliosdefault/**" />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<cache:annotation-driven />
 	<bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager">
@@ -74,7 +79,7 @@
 <!-- activate when you use cassandra. -->
 
 
-<bean id="daofactory" class="com.worksap.bootcamp.webeditor.dao.DaoFactoryCassandraImpl">
+<bean id="daofactory" class="com.machworks.musicasecretary.dao.DaoFactoryCassandraImpl">
 		<qualifier type="org.springframework.beans.factory.annotation.Qualifier"
 			value="daofactory" />
     </bean>

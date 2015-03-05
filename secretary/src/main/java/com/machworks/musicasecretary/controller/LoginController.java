@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value="/secretary/login", produces=MediaType.TEXT_HTML_VALUE)
-public class LoginController extends AbsSecretaryController {
+public class LoginController {
 	/**
 	 * Return login page.
 	 * 
@@ -21,7 +21,7 @@ public class LoginController extends AbsSecretaryController {
 		return new ModelAndView(getVmName());
 	}
 
-	@RequestMapping(value="/login")
+	@RequestMapping(value="/", method = RequestMethod.POST)
 	public ModelAndView login(HttpServletRequest req) {
 		if(confirmLogin(req)) {
 		return new ModelAndView("frame");
@@ -33,8 +33,7 @@ public class LoginController extends AbsSecretaryController {
 		return true;		
 	}
 
-	@Override
-	protected String getVmName() {
+	private String getVmName() {
 		return "login";
 	}
 }
