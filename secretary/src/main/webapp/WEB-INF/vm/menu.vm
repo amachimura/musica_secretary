@@ -2,28 +2,33 @@
 				<header>
 					<h2>Hi, Akira! Go for <strong>SASANOHA choir</strong>.</h2>
 				</header>
+		<header>
+			<h3><a href="#">現在の進捗</a></h3>
+		<p>演奏会まであと x 日</p>							
+		</header>
+				
 			</section>
 
 <div class="reel container">
- 	<div class="row">
+ 	<div class="row menu-elements">
 
-					<article class="menu-element col-xs-6 col-sm-4 col-md-2">
+					<article id="reminder" class="menu-element col-xs-4 col-sm-3 col-md-2">
 						<a href="#" class="image featured"><img src="/musica-secretary/heliosdefault/images/pic01.jpg" alt=""></a>
 						<header>
-							<h3><a href="#">連絡管理</a></h3>
+							<h3><a href="/musica-secretary/secretary/reminder/">連絡管理</a></h3>
 						</header>
 						<p>テンプレートを利用し、スムーズな連絡を支援します。</p>							
 					</article>
 				
-					<article class="menu-element col-xs-6 col-sm-4 col-md-2">
+					<article class="menu-element col-xs-4 col-sm-3 col-md-2">
 						<a href="#" class="image featured"><img src="/musica-secretary/heliosdefault/images/pic02.jpg" alt=""></a>
 						<header>
-							<h3><a href="#">スケジュール管理</a></h3>
+							<h3><a href="/secretary/reminder/">スケジュール管理</a></h3>
 						</header>
 						<p>外部サービスを利用し、スケジュールを調整します。</p>							
 					</article>
 				
-					<article class="menu-element col-xs-6 col-sm-4 col-md-2">
+					<article class="menu-element col-xs-4 col-sm-3 col-md-2">
 						<a href="#" class="image featured"><img src="/musica-secretary/heliosdefault/images/pic03.jpg" alt=""></a>
 						<header>
 							<h3><a href="#">目標管理</a></h3>
@@ -31,7 +36,7 @@
 						<p>目標を管理し、適切な練習プランを練ります。</p>							
 					</article>
 				
-					<article class="menu-element col-xs-6 col-sm-4 col-md-2">
+					<article class="menu-element col-xs-4 col-sm-3 col-md-2">
 						<a href="#" class="image featured"><img src="/musica-secretary/heliosdefault/images/pic04.jpg" alt=""></a>
 						<header>
 							<h3><a href="#">リソース管理</a></h3>
@@ -39,7 +44,7 @@
 						<p>楽譜・音源などを管理し、共有します。</p>							
 					</article>
 				
-					<article class="menu-element col-xs-6 col-sm-4 col-md-2">
+					<article class="menu-element col-xs-4 col-sm-3 col-md-2">
 						<a href="#" class="image featured"><img src="/musica-secretary/heliosdefault/images/pic05.jpg" alt=""></a>
 						<header>
 							<h3><a href="#">予約管理</a></h3>
@@ -47,7 +52,7 @@
 						<p>ステージ・練習場所などを照会し、スムーズな運営を支援します。</p>							
 					</article>
 
-					<article class="menu-element col-xs-6 col-sm-4 col-md-2">
+					<article class="menu-element col-xs-4 col-sm-3 col-md-2">
 						<a href="#" class="image featured"><img src="/musica-secretary/heliosdefault/images/pic01.jpg" alt=""></a>
 						<header>
 							<h3><a href="#">メンバー管理</a></h3>

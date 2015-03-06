@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html style="-webkit-text-size-adjust:none;">
+<html style="-webkit-text-size-adjust:none;" lang="ja">
 <head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
 	#if($vm_key_use_debug)
 		$vm_key_debug_script
 	#end
 
-	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
 	<title>$vm_key_page_title</title>
 
@@ -77,24 +77,13 @@
 			</div>
 	
 	#if($vm_key_contents_template)
-	<div class="container">
-	<div class="row">
-	<div class="col-sm-9">
 	#parse($vm_key_contents_template)
-	</div>
-	<div class="col-sm-3">
-	<div>
-		<header>
-			<h3><a href="#">現在の進捗</a></h3>
-		</header>
-		<p>演奏会まであと x 日</p>							
-		</div>
-	</div>
-	</div>
-	</div>
 	#end
 
 	</div>
+	<footer class="footer">
+		
+	</footer>
 	
 <script type="text/javascript">
 jQuery(document).ready(function(){

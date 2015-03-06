@@ -26,6 +26,7 @@ public class FrameController {
 			}
 		}
 		Map<String, Object> model = new HashMap<String, Object>();
+		model.remove("vm_key_contents_template");
 		model.put("vm_key_contents_template", "/menu.vm");
 		return new ModelAndView(getVmName(), model);
 	}

@@ -27,7 +27,7 @@ public class LoginController {
 	public ModelAndView login(HttpServletRequest req) {
 		if(confirmLogin(req)) {
 			try {
-				return new ModelAndView(sendNextPage(req, "/menu"));
+				return new ModelAndView(sendNextPage(req, "secretary/"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -51,7 +51,7 @@ public class LoginController {
 	 * @throws IOException
 	 */
 	private String sendNextPage(HttpServletRequest req, String pageUrl) throws IOException {
-		return "redirect:" + req.getServletPath() + pageUrl;
+		return "redirect:" + "/" + pageUrl;
 	}
 
 }
