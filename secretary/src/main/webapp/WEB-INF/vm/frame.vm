@@ -11,9 +11,6 @@
 	<title>$vm_key_page_title</title>
 
 	<!-- CSS -->
-	#if($vm_key_csss)
-		$vm_key_csss
-	#end
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
@@ -21,19 +18,22 @@
 	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap-responsive.min.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/frame/frame.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/menu/menu.css" />
+	#if($vm_key_csss)
+		$vm_key_csss
+	#end
 
 	<!-- JS -->
-	#if($vm_key_scripts)
-		$vm_key_scripts
-	#end
 	<script type="text/javascript" src="/musica-secretary/lib/jquery/jquery.min.js"></script>
+	<script src="/musica-secretary/lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="/musica-secretary/lib/jquery/jquery.dropotron.min.js"></script>
 	<script src="/musica-secretary/lib/jquery/jquery.scrolly.min.js"></script>
 	<script src="/musica-secretary/lib/jquery/jquery.onvisible.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
-	<script src="/musica-secretary/lib/bootstrap/js/bootstrap.min.js"></script>
+	#if($vm_key_scripts)
+		$vm_key_scripts
+	#end
 	
 
 </head>
@@ -44,11 +44,7 @@
 	<div id="header">
 
 				<!-- Inner -->
-					<div class="inner">
-						<header>
 							<h2><a href="index.html" id="logo">Musica Secretary</a></h2>
-						</header>
-					</div>
 				
 				<!-- Nav -->
 					<nav id="nav" class="frame_nav">
