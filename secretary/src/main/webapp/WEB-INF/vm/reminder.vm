@@ -1,11 +1,12 @@
-<div class="container">
+<div class="container under-header">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="btn-group">
-				 <button class="btn btn-default">please_select_template</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+				 <button class="btn btn-default">please_select_template</button> 
+				 <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
 				<ul class="dropdown-menu">
 					<li>
-						<a href="#">Action</a>
+						<a href="#">Reminder</a>
 					</li>
 					<li class="disabled">
 						<a href="#">Another action</a>

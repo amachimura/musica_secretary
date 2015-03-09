@@ -52,3 +52,7 @@ body {
 .container .credit {
   margin: 20px 0;
 }
+
+.under-header {
+	margin-top: 60px;
+}

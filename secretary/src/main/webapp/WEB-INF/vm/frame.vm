@@ -11,11 +11,8 @@
 	<title>$vm_key_page_title</title>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
-	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
-	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
 	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/frame/frame.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/menu/menu.css" />
 	#if($vm_key_csss)
@@ -30,9 +27,7 @@
 	<script src="/musica-secretary/lib/jquery/jquery.onvisible.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
-	<!--
 	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
-	-->
 	#if($vm_key_scripts)
 		$vm_key_scripts
 	#end
