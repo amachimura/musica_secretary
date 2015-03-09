@@ -1,6 +1,8 @@
 package com.machworks.musicasecretary.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,28 +13,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping(value="/secretary/login", produces=MediaType.TEXT_HTML_VALUE)
-public class LoginController {
-	/**
-	 * Return login page.
-	 * 
-	 * @return login page
-	 */
+@RequestMapping(value="/secretary", produces=MediaType.TEXT_HTML_VALUE)
+public class FrameController {
+	
 	@RequestMapping(value="/", method = RequestMethod.GET)
-	public ModelAndView index() {
-		return new ModelAndView(getVmName());
-	}
-
-	@RequestMapping(value="/", method = RequestMethod.POST)
-	public ModelAndView login(HttpServletRequest req) {
-		if(confirmLogin(req)) {
+	public ModelAndView index(HttpServletRequest req) {
+		if(!authenticated()) {
 			try {
-				return new ModelAndView(sendNextPage(req, "secretary/"));
+				return new ModelAndView(sendNextPage(req, "/login"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
-		return new ModelAndView(getVmName());
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.remove("vm_key_contents_template");
+		model.put("vm_key_contents_template", "/menu.vm");
+		return new ModelAndView(getVmName(), model);
+	}
+
+	private boolean authenticated() {
+		return true;
 	}
 
 	private boolean confirmLogin(HttpServletRequest req) {
@@ -40,7 +40,7 @@ public class LoginController {
 	}
 
 	private String getVmName() {
-		return "login";
+		return "frame";
 	}
 
 	/**
@@ -51,7 +51,6 @@ public class LoginController {
 	 * @throws IOException
 	 */
 	private String sendNextPage(HttpServletRequest req, String pageUrl) throws IOException {
-		return "redirect:" + "/" + pageUrl;
+		return "redirect:" + req.getServletPath() + pageUrl;
 	}
-
 }

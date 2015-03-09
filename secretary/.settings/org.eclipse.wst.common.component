@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="2.0">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
   <wb-module deploy-name="musica-secretary">
     <property name="context-root" value="musica-secretary"/>
     <wb-resource deploy-path="/" source-path="src/main/webapp"/>
@@ -32,6 +31,9 @@
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="spring-web-4.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="spring-context-support-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/jstl/jstl/1.2/jstl-1.2.jar">
@@ -78,5 +80,9 @@
     </dependent-module>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
   </wb-module>
 </project-modules>

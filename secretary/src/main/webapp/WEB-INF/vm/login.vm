@@ -8,40 +8,38 @@
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
-	<title>$vm_key_page_title</title>
+	<title>login</title>
 
-	## iOS用ホーム画面追加用アイコン
-	$vm_key_icon_image
 
 	<!-- CSS -->
-	$vm_key_csss
+	<!--
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-desktop.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
+	-->
+	<link rel="stylesheet" href="/musica-secretary/css/login/login.css" />
 
 	<!-- JS -->
-	$vm_key_scripts
-	<script src="lib/jquery/jquery.min.js"></script>
-	<script src="lib/jquery/jquery.dropotron.min.js"></script>
-	<script src="lib/jquery/jquery.scrolly.min.js"></script>
-	<script src="lib/jquery/jquery.onvisible.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-desktop.css" />
-		<link rel="stylesheet" href="css/style-noscript.css" />
-	</noscript>
+	<script type="text/javascript" src="/musica-secretary/lib/jquery/jquery.min.js"></script>
+	<script src="/musica-secretary/lib/jquery/jquery.dropotron.min.js"></script>
+	<script src="/musica-secretary/lib/jquery/jquery.scrolly.min.js"></script>
+	<script src="/musica-secretary/lib/jquery/jquery.onvisible.min.js"></script>
+	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
+	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
+	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
+	
 
 </head>
 <body class="homepage">
 
-			<div id="header">
+			<div id="header" class="login_background">
 						
 				<!-- Inner -->
 				<!-- Inner -->
 					<div class="inner">
 						<header>
-							<h1><a href="index.html" id="logo">Musica Secretary</a></h1>
+							<h2><a href="index.html" id="logo">Musica Secretary</a></h2>
 							<hr />
 							<p>Full support your musical life.</p>
 						</header>

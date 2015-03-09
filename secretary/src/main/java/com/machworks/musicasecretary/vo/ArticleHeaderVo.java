@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
 public final class ArticleHeaderVo {
 	private final int id;
 	private final String title;

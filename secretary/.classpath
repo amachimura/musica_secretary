@@ -57,6 +57,11 @@
       <attribute value="jar:file:/C:/Users/machi_000/.m2/repository/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/machi_000/.m2/repository/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
   <classpathentry kind="var" path="M2_REPO/jstl/jstl/1.2/jstl-1.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.4.180/h2-1.4.180.jar" sourcepath="M2_REPO/com/h2database/h2/1.4.180/h2-1.4.180-sources.jar">
     <attributes>
