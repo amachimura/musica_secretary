@@ -1,9 +1,7 @@
 package com.machworks.musicasecretary.vo;
 
-import com.worksap.company.dto.annotation.Key;
 
 public final class TagVo {
-	@Key(isStringKey=false)
 	private final int id;
 	private final String name;
 
