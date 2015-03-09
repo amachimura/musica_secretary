@@ -1,12 +1,9 @@
 package com.machworks.musicasecretary.dao;
 
-import com.worksap.company.access.cassandra.IndexUtil;
-import com.worksap.company.dto.annotation.Key;
 
 public class ArticleTagRelationDto {
 	public int articleId;
 	public int tagId;
-	@Key
 	public String key;
 
 	public ArticleTagRelationDto(int articleId, int tagId) {
@@ -36,6 +33,6 @@ public class ArticleTagRelationDto {
 	}
 	
 	void setKey(){
-		this.key = this.articleId + IndexUtil.IDX_SPR + this.tagId;
+		this.key = this.articleId + "/" + this.tagId;
 	}
 }

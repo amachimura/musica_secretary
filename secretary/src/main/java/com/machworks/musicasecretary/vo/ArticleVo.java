@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.worksap.company.dto.annotation.Key;
-
 public final class ArticleVo {
-	@Key
 	private final int id;
 	private final String content;
 	private final String title;

@@ -1,9 +1,7 @@
 package com.machworks.musicasecretary.dao;
 
-import com.worksap.company.dto.annotation.Key;
 
 final class ArticleHeaderDto {
-	@Key(isStringKey=false)
 	private int id;
 	private String title;
 
