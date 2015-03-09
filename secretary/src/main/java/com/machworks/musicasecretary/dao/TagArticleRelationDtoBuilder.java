@@ -1,6 +1,5 @@
 package com.machworks.musicasecretary.dao;
 
-import com.worksap.company.dto.annotation.Key;
 
 
 /**
@@ -11,7 +10,6 @@ import com.worksap.company.dto.annotation.Key;
 public class TagArticleRelationDtoBuilder {
 	public int articleId;
 	public int tagId;
-	@Key
 	public String key;
 
 

@@ -1,6 +1,5 @@
 package com.machworks.musicasecretary.dao;
 
-import com.worksap.company.dto.annotation.Key;
 
 
 /*
@@ -8,7 +7,6 @@ import com.worksap.company.dto.annotation.Key;
  * It means you can use other DAO's default scope function.
  */
 final class ArticleDetailDto {
-	@Key(isStringKey=false)
 	private int id;
 	private String content;
 

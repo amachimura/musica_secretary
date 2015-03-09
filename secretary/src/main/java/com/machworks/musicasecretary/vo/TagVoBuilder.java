@@ -1,6 +1,5 @@
 package com.machworks.musicasecretary.vo;
 
-import com.worksap.company.dto.annotation.Key;
 
 
 /**
@@ -9,7 +8,6 @@ import com.worksap.company.dto.annotation.Key;
  * @author works
  */
 public final class TagVoBuilder {
-	@Key(isStringKey=false)
 	public Integer id = Integer.MAX_VALUE;
 	public String name;
 	private TagVo.Builder builder = new TagVo.Builder();

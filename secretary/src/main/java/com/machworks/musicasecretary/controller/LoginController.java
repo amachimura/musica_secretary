@@ -1,5 +1,7 @@
 package com.machworks.musicasecretary.controller;
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.MediaType;
@@ -10,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value="/secretary/login", produces=MediaType.TEXT_HTML_VALUE)
-public class LoginController extends AbsSecretaryController {
+public class LoginController {
 	/**
 	 * Return login page.
 	 * 
@@ -21,10 +23,14 @@ public class LoginController extends AbsSecretaryController {
 		return new ModelAndView(getVmName());
 	}
 
-	@RequestMapping(value="/login")
+	@RequestMapping(value="/", method = RequestMethod.POST)
 	public ModelAndView login(HttpServletRequest req) {
 		if(confirmLogin(req)) {
-		return new ModelAndView("frame");
+			try {
+				return new ModelAndView(sendNextPage(req, "secretary/"));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		return new ModelAndView(getVmName());
 	}
@@ -33,8 +39,19 @@ public class LoginController extends AbsSecretaryController {
 		return true;		
 	}
 
-	@Override
-	protected String getVmName() {
+	private String getVmName() {
 		return "login";
 	}
+
+	/**
+	 * 画面遷移させます
+	 * @param req
+	 * @param pageUrl
+	 * @return
+	 * @throws IOException
+	 */
+	private String sendNextPage(HttpServletRequest req, String pageUrl) throws IOException {
+		return "redirect:" + "/" + pageUrl;
+	}
+
 }

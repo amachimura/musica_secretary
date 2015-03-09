@@ -63,6 +63,11 @@
       <attribute value="jar:file:/C:/Users/works/.m2/repository/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/works/.m2/repository/org/springframework/spring-context-support/4.1.5.RELEASE/spring-context-support-4.1.5.RELEASE-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
   <classpathentry kind="var" path="M2_REPO/jstl/jstl/1.2/jstl-1.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.4.180/h2-1.4.180.jar" sourcepath="M2_REPO/com/h2database/h2/1.4.180/h2-1.4.180-sources.jar">
     <attributes>
@@ -134,11 +139,6 @@
   <classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar" sourcepath="M2_REPO/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3-sources.jar">
     <attributes>
       <attribute value="jar:file:/C:/Users/works/.m2/repository/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/4.0.1.RELEASE/spring-context-support-4.0.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context-support/4.0.1.RELEASE/spring-context-support-4.0.1.RELEASE-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/C:/Users/works/.m2/repository/org/springframework/spring-context-support/4.0.1.RELEASE/spring-context-support-4.0.1.RELEASE-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/net/sf/ehcache/ehcache/2.7.4/ehcache-2.7.4.jar" sourcepath="M2_REPO/net/sf/ehcache/ehcache/2.7.4/ehcache-2.7.4-sources.jar">
@@ -253,9 +253,9 @@
       <attribute value="jar:file:/C:/Users/works/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/works/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/C:/Users/works/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar" sourcepath="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4-sources.jar">

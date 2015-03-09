@@ -1,6 +1,5 @@
 package com.machworks.musicasecretary.dao;
 
-import com.worksap.company.dto.annotation.Key;
 
 
 /**
@@ -9,7 +8,6 @@ import com.worksap.company.dto.annotation.Key;
  * @author works
  */
 public final class ArticleHeaderDtoBuilder {
-	@Key(isStringKey=false)
 	public Integer id = Integer.MAX_VALUE;
 	public String title;
 
