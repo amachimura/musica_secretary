@@ -1,39 +1,23 @@
 <div class="container under-header">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
-			<div class="btn-group">
-				 <button class="btn btn-default">please_select_template</button> 
-				 <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="#">Reminder</a>
-					</li>
-					<li class="disabled">
-						<a href="#">Another action</a>
-					</li>
-					<li class="divider">
-					</li>
-					<li>
-						<a href="#">Something else here</a>
-					</li>
-				</ul>
+			<div class="initial-select">
+			<select id="template-select" class="form-control default-component " name="select">
+<option value="en">英語</option>
+<option value="de">ドイツ語</option>
+<option value="fr">フランス語</option>
+<option value="ja" selected>日本語</option>
+<option value="zh">中国語</option>
+</select>
+			<select id="address-select" class="form-control default-component" name="select">
+<option value="en">英語</option>
+<option value="de">ドイツ語</option>
+<option value="fr">フランス語</option>
+<option value="ja" selected>日本語</option>
+<option value="zh">中国語</option>
+</select>
+		<button type="button" class="btn input-sm btn-success default-component">write</button>
 			</div>
-			<div class="btn-group">
-				 <button class="btn btn-default">address_to_send</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="#">Action</a>
-					</li>
-					<li class="disabled">
-						<a href="#">Another action</a>
-					</li>
-					<li class="divider">
-					</li>
-					<li>
-						<a href="#">Something else here</a>
-					</li>
-				</ul>
-			</div> <button type="button" class="btn btn-default">write</button>
 			<div class="row clearfix">
 				<div class="col-md-6 column">
 					<form role="form">

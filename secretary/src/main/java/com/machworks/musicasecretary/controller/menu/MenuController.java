@@ -23,4 +23,10 @@ public class MenuController extends AbsSecretaryController {
 	public ModelAndView index() {
 		return new ModelAndView(getVmName());
 	}
+
+	@Override
+	protected void serviceProc() {
+		// TODO Auto-generated method stub
+		
+	}
 }

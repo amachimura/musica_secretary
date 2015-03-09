@@ -25,6 +25,7 @@ public abstract class AbsSecretaryController {
 	
 	@RequestMapping(value="/")
 	protected ModelAndView show(){
+		serviceProc();
 		switchInnerPage(getVmName());
 		return new ModelAndView("frame", model);
 	}
@@ -45,7 +46,14 @@ public abstract class AbsSecretaryController {
 		return path.toString();
 	}
 	
+	/**
+	 * 各サービス固有の処理を実装してください。
+	 * CSSとかJSとか
+	 */
+	protected abstract void serviceProc();
+	
 	protected void switchInnerPage(String vmName) {
+		
 		model.remove("vm_key_contents_template");
 		model.put("vm_key_contents_template", "/"+vmName+".vm");
 	}

@@ -12,10 +12,12 @@
 
 
 	<!-- CSS -->
+	<!--
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-desktop.css" />
 	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
+	-->
 	<link rel="stylesheet" href="/musica-secretary/css/login/login.css" />
 
 	<!-- JS -->

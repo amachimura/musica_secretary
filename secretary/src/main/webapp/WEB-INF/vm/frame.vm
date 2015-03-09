@@ -11,8 +11,12 @@
 	<title>$vm_key_page_title</title>
 
 	<!-- CSS -->
+	<!--
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/skel.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style.css" />
+	<link rel="stylesheet" href="/musica-secretary/heliosdefault/css/style-noscript.css" />
+	-->
 	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/frame/frame.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/menu/menu.css" />
 	#if($vm_key_csss)
@@ -74,6 +78,9 @@
 	#end
 
 	</div>
+	
+	<footer class="footer">hoge
+	</footer>
 
 <!--	
 <script type="text/javascript">

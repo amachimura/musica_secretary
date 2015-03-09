@@ -17,4 +17,9 @@ public class ReminderSubmitController extends AbsSecretaryController {
 		return "reminder";
 	}
 
+	@Override
+	protected void serviceProc() {
+		model.put("vm_key_csss", "<link rel=\"stylesheet\" href=\"/musica-secretary/css/reminder/reminder.css\" />");
+	}
+
 }
