@@ -11,14 +11,14 @@
 		// Header (homepage only)
 			header: {
 				fullScreen: true,
-				fadeIn: true,
+				fadeIn: false,
 				fadeDelay: 500
 			},
 
 		// Carousels
 			carousels: {
 				speed: 4,
-				fadeIn: true,
+				fadeIn: false,
 				fadeDelay: 250
 			},
 

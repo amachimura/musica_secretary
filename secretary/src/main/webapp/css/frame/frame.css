@@ -25,7 +25,7 @@ body {
 }
 #page {
   /* Margin bottom by footer height */
-  padding-bottom:60px;
+  padding-bottom:90px;
 }
 .footer {  /*<footer class="footer">*/
   position: fixed;
