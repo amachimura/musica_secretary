@@ -19,7 +19,9 @@ public class ReminderSubmitController extends AbsSecretaryController {
 
 	@Override
 	protected void serviceProc() {
-		model.put("vm_key_csss", "<link rel=\"stylesheet\" href=\"/musica-secretary/css/reminder/reminder.css\" />");
+		setCss("lib/bootstrap/datepicker/css/datepicker.css");
+		setScript("lib/bootstrap/datepicker/js/bootstrap-datepicker.js");
+		setCss("css/reminder/reminder.css");
 	}
 
 }
