@@ -66,6 +66,10 @@ body {
 	margin-top: 60px;
 }
 
+.row-for-date{
+	margin-left: 10px!important;
+}
+
 .default-component{
 	margin: 5px 0;
 }
