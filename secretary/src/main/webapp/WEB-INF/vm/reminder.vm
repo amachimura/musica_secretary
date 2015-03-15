@@ -1,7 +1,7 @@
 
 		
 			<div class="initial-select">
-			<select id="template-select" class="form-control default-component " name="select">
+			<select id="template-select" class="form-control default-component" name="select">
 <option value="sasanoha_reminder" selected>笹の葉練習リマインダー</option>
 <option value="tapiro_announce">タピーロ練習連絡</option>
 <option value="sasanoha_announce">笹の葉練習連絡</option>
