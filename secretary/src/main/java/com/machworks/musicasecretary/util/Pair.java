@@ -1,5 +1,14 @@
 package com.machworks.musicasecretary.util;
 
+/**
+ * @author machi_000
+ *
+ * 2タプルっぽい何か。
+ * getメソッドをprotectedにして、wrapしていないものは使えないようにしてみる。
+ * pairくらいフランクに使えたほうがいいか…？
+ * @param <T1>
+ * @param <T2>
+ */
 public class Pair <T1, T2>{
 	private final T1 first;
 	private final T2 second;
@@ -8,11 +17,11 @@ public class Pair <T1, T2>{
 		this.first = first;
 		this.second = second;
 	}
-	public T1 getFirst(){
+	protected T1 getFirst(){
 		return first;
 	}
 	
-	public T2 getSecond(){
+	protected T2 getSecond(){
 		return second;
 	}
 }
