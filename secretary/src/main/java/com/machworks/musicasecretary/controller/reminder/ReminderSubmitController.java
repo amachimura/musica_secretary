@@ -14,6 +14,7 @@ public class ReminderSubmitController extends AbsSecretaryController {
 
 	@Override
 	protected String getVmName() {
+		
 		return "reminder";
 	}
 
