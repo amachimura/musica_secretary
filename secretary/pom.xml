@@ -12,15 +12,8 @@
 	<packaging>war</packaging>
 
 	<repositories>
-	<!-- 
-		<repository>
-			<id>hue-group</id>
-			<url>https://nexus.hue.workslan/nexus/content/groups/hue</url>
-			<snapshots>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-	-->
+		<!-- <repository> <id>hue-group</id> <url>https://nexus.hue.workslan/nexus/content/groups/hue</url> 
+			<snapshots> <updatePolicy>always</updatePolicy> </snapshots> </repository> -->
 		<repository>
 			<id>maven.seasar.org</id>
 			<name>The Seasar Foundation Maven Repository</name>
@@ -147,31 +140,19 @@
 			<version>0.11.4.1</version>
 			<scope>test</scope>
 		</dependency>
-<!-- 
 		<dependency>
-			<groupId>com.worksap.company.access</groupId>
-			<artifactId>keyvalueaccess</artifactId>
-			<version>1.0.4-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.mortbay.jetty</groupId>
-					<artifactId>servlet-api</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.2</version>
 		</dependency>
--->
+
+
+		<!-- <dependency> <groupId>com.worksap.company.access</groupId> <artifactId>keyvalueaccess</artifactId> 
+			<version>1.0.4-SNAPSHOT</version> <exclusions> <exclusion> <groupId>commons-logging</groupId> 
+			<artifactId>commons-logging</artifactId> </exclusion> <exclusion> <groupId>log4j</groupId> 
+			<artifactId>log4j</artifactId> </exclusion> <exclusion> <groupId>org.mortbay.jetty</groupId> 
+			<artifactId>servlet-api</artifactId> </exclusion> <exclusion> <groupId>org.springframework</groupId> 
+			<artifactId>spring</artifactId> </exclusion> </exclusions> </dependency> -->
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
