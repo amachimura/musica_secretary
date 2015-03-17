@@ -152,6 +152,17 @@
 			<version>1.19.1</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.google.oauth-client</groupId>
+			<artifactId>google-oauth-client</artifactId>
+			<version>1.17.0-rc</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-calendar</artifactId>
+			<version>v3-rev77-1.17.0-rc</version>
+		</dependency>
+
 
 
 		<!-- <dependency> <groupId>com.worksap.company.access</groupId> <artifactId>keyvalueaccess</artifactId> 
