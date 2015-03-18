@@ -26,6 +26,10 @@ public class GoogleCalendarCommon {
 	private static final String PRIVATE_KEY_ID = "9a1d97821c536c2a80d1af4838986422eb988f68";
 	private static final String PRIVATE_KEY = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAJpmqNyESvCoG0dU\nltyMLJGika7PA/su6SNm2KnwJhrFFtBxjiiKAkBkwBh8gV+W430PIk/MxpOc1PQT\noIoIFZK6pEf0ffIFHhG0KphP5wsN9o6sK6i0QUSQw/Fagn9yHwZ3oIoXiviJ/o8J\niS8YhxiMqvgmFXPyUDmqrxkPWVunAgMBAAECgYAkWr2xxnh6t6pMnk8zONIZrGSO\n+3FdiEseqc2kHcZrETLw+3vUccJb9R0B5vbzUezYemLC1V2ATjIaEjD/ry2c1DJX\nIB6f3cM71oLm+BelPiE3OiPlyapc4ZIxWe/oVGoU6JCVk8vZQspI1yJDN+z88YvB\nfmHzM6/weV4/6XEvIQJBAMjZSSqIDeZn0LT34DC9P8STvztkgS9tBgl1DXUknt1K\nKZbWLc/W1WkaN+2nb67yoJxoRbCMT8YPb5jlmVndovcCQQDEzFEvB+Q2jNGZcIJJ\njpsYtA/nPrP11miRk323U0FYa6kOjdZ9/t/HdoEO22NNPafCMfUITMb58y3A6mAk\nrzDRAkAv8x/ylXSsExDSg3L0b9nvdk5rQX1N8ztDurwxwUJkFjaDmjJpsiJU6zt6\n80RIgggyDvrEQVsyL7E20Wmg+LbVAkEAob1iQ4ryzrpxUPAcxCOF6ImkQGNSOAud\nKXfUbKTqIadp6+I6lJayiBYm/3TjagnwJDQ2tDmVlrt7sP9vQPcS4QJBAIZITSXy\nu2YyT6GPgOhWN+dgRKM3SWks4Zgdu89KhVI9kwxoOxPqmxCJesHbu2QJZJaUcHj4\n3MRClFSVOmAkpkc\u003d";
 	
+	private static final String CLIENT_ID_WEB = "279702855777-i3263keva3l41c87838n9rvffqds8jkc.apps.googleusercontent.com";
+	private static final String AUTH_EMAIL_WEB = "279702855777-i3263keva3l41c87838n9rvffqds8jkc@developer.gserviceaccount.com";
+	private static final String CLIENT_SECRET_WEB = "hJooRSbURJjOFHnLinjXdqS4";
+	
 	private static final String CLIENT_ID = "279702855777-pdaflpgnt3krf1clsd0i11u76udn861m.apps.googleusercontent.com";
 	private static final String AUTH_EMAIL = "279702855777-pdaflpgnt3krf1clsd0i11u76udn861m@developer.gserviceaccount.com";
 	private static final String PATH_TO_JSON = "C:\\Users\\works\\Documents\\workspaces\\musica\\secretary\\src\\main\\java\\com\\machworks\\musicasecretary\\nao\\musician-secretary-9a1d97821c53.json";
@@ -77,9 +81,10 @@ public class GoogleCalendarCommon {
 		GoogleClientSecrets secrets = new GoogleClientSecrets();
 		secrets.set("private_key_id", PRIVATE_KEY_ID);
 		secrets.set("private_key", PRIVATE_KEY);
-		secrets.set("client_email", AUTH_EMAIL);
-		secrets.set("client_id", CLIENT_ID);
-		secrets.setInstalled(new Details().setClientId(CLIENT_ID));
+		secrets.set("client_email", AUTH_EMAIL_WEB);
+		secrets.set("client_id", CLIENT_ID_WEB);
+		secrets.set("client_secret", CLIENT_SECRET_WEB);
+		secrets.setWeb(new Details().setClientId(CLIENT_ID_WEB).setClientSecret(CLIENT_SECRET_WEB));
 		return secrets;
 	}
 
@@ -112,7 +117,7 @@ public class GoogleCalendarCommon {
 			HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
 		}
 
-		GoogleClientSecrets secrets = getClientSecrets();
+		GoogleClientSecrets secrets = getClientSecretsFromVar();
 		GoogleCredential credential = new GoogleCredential.Builder()
 		.setClientSecrets(secrets.getDetails().getClientId(),
 				secrets.getDetails().getClientSecret())

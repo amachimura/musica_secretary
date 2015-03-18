@@ -37,9 +37,7 @@ public class GoogleCallbackController {
 		com.google.api.services.calendar.Calendar client = googleCalendar.getCalendarClient(credential); 
 
 		//カレンダーリスト取得 
-		//com.google.api.services.calendar.Calendar.CalendarList feed = (CalendarList)client.calendarList().list().execute();
-		
-		
+		Object calenderList = client.calendarList().list().execute();		
 		return new ModelAndView("menu");
 	}
 	
