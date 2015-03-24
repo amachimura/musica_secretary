@@ -38,7 +38,7 @@ public class GoogleCallbackController {
 
 		//カレンダーリスト取得 
 		Object calenderList = client.calendarList().list().execute();		
-		return new ModelAndView("menu");
+		return new ModelAndView(calenderList.toString());
 	}
 	
 	@RequestMapping(value="/ctest")
