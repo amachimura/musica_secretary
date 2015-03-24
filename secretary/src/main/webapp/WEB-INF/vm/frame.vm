@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html style="-webkit-text-size-adjust:none;" lang="ja">
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta charset="UTF-8" />
 
 	#if($vm_key_use_debug)
 		$vm_key_debug_script
 	#end
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />-->
 	<title>$vm_key_page_title</title>
 
 	<!-- CSS -->
