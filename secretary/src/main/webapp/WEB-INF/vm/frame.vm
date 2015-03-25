@@ -33,6 +33,7 @@
 	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
+	<script src="/musica-secretary/lib/fastclick/fastclick.js"></script>
 	#if($vm_key_scripts)
 		$vm_key_scripts
 	#end
