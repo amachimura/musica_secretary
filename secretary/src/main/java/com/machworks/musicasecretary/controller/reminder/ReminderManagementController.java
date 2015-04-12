@@ -31,7 +31,6 @@ public class ReminderManagementController extends AbsSecretaryController {
 	public Map<String, Object> fetch(@PathVariable("templateId") int templateId){
 		
 		return model;
-		
 	}
 
 }
