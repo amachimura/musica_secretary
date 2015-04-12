@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="-webkit-text-size-adjust:none;" lang="ja">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="utf-8" />
 
 	#if($vm_key_use_debug)
 		$vm_key_debug_script
