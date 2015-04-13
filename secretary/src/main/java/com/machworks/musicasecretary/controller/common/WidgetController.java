@@ -1,7 +1,6 @@
 package com.machworks.musicasecretary.controller.common;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.machworks.musicasecretary.controller.AbsSecretaryController;
 import com.machworks.musicasecretary.entity.ArticleHeaderEntity;
+import com.machworks.musicasecretary.service.ServiceFactory;
 
 @Controller
 @RequestMapping(value="/secretary/widget")

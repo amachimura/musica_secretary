@@ -3,12 +3,16 @@ package com.machworks.musicasecretary.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.machworks.musicasecretary.service.ServiceFactory;
 import com.machworks.musicasecretary.util.SecretaryUtil;
 
 
@@ -20,6 +24,12 @@ import com.machworks.musicasecretary.util.SecretaryUtil;
 public abstract class AbsSecretaryController {
 	
 	protected Map<String, Object> model;
+	
+	@Autowired
+	private HttpServletRequest request;
+
+	@Autowired
+	protected ServiceFactory serviceFactory;
 	
 	public AbsSecretaryController(){
 		this.model = new HashMap<String, Object>();

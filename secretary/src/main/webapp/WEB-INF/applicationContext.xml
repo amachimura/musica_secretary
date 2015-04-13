@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:cache="http://www.springframework.org/schema/cache" xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mongo="http://www.springframework.org/schema/data/mongo"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
                            http://www.springframework.org/schema/cache
@@ -12,7 +12,9 @@
                            http://www.springframework.org/schema/mvc
                            http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
                            http://www.springframework.org/schema/tx
-                           http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+                           http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+                            http://www.springframework.org/schema/data/mongo
+                            http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
 	<context:component-scan base-package="com.machworks.musicasecretary" />
 	<mvc:annotation-driven />
 	<mvc:resources location="/bootstrap/" mapping="/bootstrap/**" />
@@ -35,29 +37,35 @@
 		</property>
 	</bean>
 	
-    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
-        <property name="resourceLoaderPath" value="/WEB-INF/vm/"/>
+	<!-- 
+	<mongo:db-factory dbname="singer" host="localhost" />
+
+    <bean id="mongoTemplate">
+        <constructor-arg ref="mongoDbFactory" />
     </bean>
 
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
-        <property name="cache" value="true"/>
-        <property name="prefix" value=""/>
-        <property name="suffix" value=".vm"/>
-    </bean>
-	
-<!--
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp"></property>
+    <mongo:repositories base-package="com.machworks.musicasecretary.vo" />
+     -->
+
+	<bean id="velocityConfig"
+		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath" value="/WEB-INF/vm/" />
 	</bean>
--->
-   	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="cache" value="true" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".vm" />
+	</bean>
+
+	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+		<property name="prefix" value="/WEB-INF/jsp"></property> </bean> -->
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<property name="jndiName" value="java:comp/env/jdbc/webeditor" />
 	</bean>
-<!--
-	<bean class="com.worksap.company.access.cassandra.CassandraAccessNetflix">
-	</bean>
--->
+	<!-- <bean class="com.worksap.company.access.cassandra.CassandraAccessNetflix"> 
+		</bean> -->
 	<bean class="org.springframework.jdbc.core.JdbcTemplate">
 		<constructor-arg ref="dataSource" />
 	</bean>
@@ -66,23 +74,28 @@
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-	
-<!-- activate when you use jdbc -->
- 
+
+	<!-- activate when you use jdbc -->
+<!--  
 	<bean id="daofactory" class="com.machworks.musicasecretary.dao.DaoFactoryJdbcImpl">
 		<qualifier type="org.springframework.beans.factory.annotation.Qualifier"
 			value="daofactory" />
 	</bean>
-
-<!-- activate when you use cassandra. -->
-
-
-<!-- 
-<bean id="daofactory" class="com.machworks.musicasecretary.dao.DaoFactoryCassandraImpl">
+-->
+		<!-- activate when you use mongodb. -->
+		
+	<bean id="daofactory" class="com.machworks.musicasecretary.dao.DaoFactoryMongoImpl">
 		<qualifier type="org.springframework.beans.factory.annotation.Qualifier"
 			value="daofactory" />
-    </bean>
--->
+	</bean>
+	
+
+	<!-- activate when you use cassandra. -->
+
+
+	<!-- <bean id="daofactory" class="com.machworks.musicasecretary.dao.DaoFactoryCassandraImpl"> 
+		<qualifier type="org.springframework.beans.factory.annotation.Qualifier" 
+		value="daofactory" /> </bean> -->
 
 
 </beans>
