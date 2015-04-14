@@ -1,0 +1,107 @@
+<div class="container bootcards-container" id="main">
+		<div class="row">
+			
+			<div class="col-md-5 col-sm-5 bootcards-list" id="list" data-title="Notes">	
+				<div class="panel panel-default">							
+					<div class="panel-body">
+						<div class="search-form">
+							<div class="row">
+							    <div class="col-xs-9">
+							      <div class="form-group">
+								      <input type="text" class="form-control" placeholder="Search Notes...">
+								      <i class="fa fa-search"></i>
+							      </div>
+							    </div>
+							    <div class="col-xs-3">
+									<a class="btn btn-primary btn-block" href="/notes/add" data-toggle="modal" data-target="#editModal">
+										<i class="fa fa-plus"></i> 
+										<span>Add</span>
+									</a>
+							    </div>
+							</div>						    
+						</div>					
+					</div>
+					<div class="list-group">
+						<a class="list-group-item pjax" href="/notes/ucw9gtbjq7ls">
+							<i class="fa fa-2x pull-left fa-check-square-o"></i>
+							<h4 class="list-group-item-heading">笹の葉リマインダ</h4>
+							<p class="list-group-item-text">更新:2015/03/30 21:10
+							</p>
+						</a>
+						<a class="list-group-item pjax" href="/notes/1rhen4xigta0w">
+							<i class="fa fa-2x pull-left fa-file-text-o"></i>
+							<h4 class="list-group-item-heading">タピーロ定期連絡</h4>
+							<p class="list-group-item-text">更新:2015/03/10 06:45
+							</p>
+						</a>
+						<a class="list-group-item pjax" href="/notes/1rhen4xigta0z">
+							<i class="fa fa-2x pull-left fa-paperclip"></i>
+							<h4 class="list-group-item-heading">significans リマインダ</h4>
+							<p class="list-group-item-text">更新:2015/03/21 06:58
+							</p>
+						</a>
+					</div>
+					<div class="panel-footer">
+						<small class="pull-left">Built with Bootcards - List</small>
+						<a class="btn btn-link btn-xs pull-right" href="/snippets/list-detailed" data-toggle="modal" data-target="#docsModal">
+							View Source</a>
+					</div>					
+				</div>
+			</div>
+		
+			<div class="col-md-7 col-sm-7 bootcards-cards" id="listDetails">
+<div id="activityCard">
+	
+	<div class="panel panel-default">
+		<div class="panel-heading clearfix">
+			<h3 class="panel-title pull-left">Text note</h3>
+
+			<!--small screen component-->
+			<div class="btn-group pull-right visible-xs">
+					<a class="btn btn-primary" href="/notes/1nllo9m3mwsu8/edit" data-toggle="modal" data-target="#editModal">	
+					<i class="fa fa-pencil"></i>
+					<span>Edit</span>
+				</a>
+			</div>	
+
+			<!--big screen component-->
+				<a class="btn btn-primary pull-right hidden-xs" href="/notes/1nllo9m3mwsu8/edit" data-toggle="modal" data-target="#editModal">	
+				<i class="fa fa-pencil"></i>
+				<span>Edit</span>
+			</a>
+
+		</div>
+		<div class="list-group">
+			<div class="list-group-item">
+				<label>Subject</label>
+				<h4 class="list-group-item-heading">【リマインダ】[date]のお知らせ</h4>
+			</div>
+			<div class="list-group-item">
+				<label>Next Send Date</label>
+				<h4 class="list-group-item-heading">2015/04/05</h4>
+			</div>
+			<div class="list-group-item">
+				<label>Content</label>
+				<h4 class="list-group-item-heading">笹の葉各位</h4>
+				<p>お疲れ様です。町村です。<br>
+				[date]の練習について、お知らせいたします。<br>
+				日時: [date]<br>
+				場所:　[place]<br>
+				曲目: [songs]<br>
+				[comment]
+				以上、よろしくお願いいたします。</p>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<small class="pull-left">Built with Bootcards - Base Card</small>
+			<a class="btn btn-link btn-xs pull-right" href="/snippets/base-card-form" data-toggle="modal" data-target="#docsModal">
+							View Source</a>
+		</div>			
+	</div>
+
+</div>
+
+</div>
+		</div>
+
+</div>

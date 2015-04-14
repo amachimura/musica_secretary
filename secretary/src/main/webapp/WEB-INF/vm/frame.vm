@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="-webkit-text-size-adjust:none;" lang="ja">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="utf-8" />
 
 	#if($vm_key_use_debug)
 		$vm_key_debug_script
@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="/musica-secretary/lib/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/frame/frame.css" />
 	<link rel="stylesheet" href="/musica-secretary/css/menu/menu.css" />
+	<link rel="stylesheet" href="/musica-secretary/css/common/widget-area.css" />
 	#if($vm_key_csss)
 		$vm_key_csss
 	#end
@@ -32,6 +33,7 @@
 	<script src="/musica-secretary/heliosdefault/js/skel.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/skel-layers.min.js"></script>
 	<script src="/musica-secretary/heliosdefault/js/init.js"></script>
+	<script src="/musica-secretary/lib/fastclick/fastclick.js"></script>
 	#if($vm_key_scripts)
 		$vm_key_scripts
 	#end
@@ -72,10 +74,27 @@
 					</nav>
 
 			</div>
+	<div class="container under-header">
+	<div class="row clearfix">
+	#if($vm_key_widget_contents)
+	<div class="col-md-9 column">
+	#else
+	<div class="col-md-12 column">
+	#end
 	
 	#if($vm_key_contents_template)
 	#parse($vm_key_contents_template)
+	</div>
 	#end
+	
+	#if($vm_key_widget_contents)
+	<div class="col-md-3 column">
+	#parse($vm_key_widget_contents)
+	</div>
+	#end
+	
+	</div>
+	</div>
 
 	</div>
 	

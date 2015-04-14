@@ -1,21 +1,12 @@
-<div class="container under-header">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
+
+		
 			<div class="initial-select">
-			<select id="template-select" class="form-control default-component " name="select">
-<option value="en">英語</option>
-<option value="de">ドイツ語</option>
-<option value="fr">フランス語</option>
-<option value="ja" selected>日本語</option>
-<option value="zh">中国語</option>
+			<select id="template-select" class="form-control default-component" name="select">
+<option value="sasanoha_reminder" selected>笹の葉練習リマインダー</option>
+<option value="tapiro_announce">タピーロ練習連絡</option>
+<option value="sasanoha_announce">笹の葉練習連絡</option>
 </select>
-			<select id="address-select" class="form-control default-component" name="select">
-<option value="en">英語</option>
-<option value="de">ドイツ語</option>
-<option value="fr">フランス語</option>
-<option value="ja" selected>日本語</option>
-<option value="zh">中国語</option>
-</select>
+
 		<button type="button" class="btn input-sm btn-success default-component">write</button>
 			</div>
 			<div class="row clearfix">
@@ -25,7 +16,20 @@
 							 <label for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" />
 						</div>
 						<div class="form-group">
-							 <label for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" />
+							 <label for="nittei-input">練習日程</label>
+							 <div class="row row-for-date">
+							 <div class="col-xs-6 col-sm-4 input-group date" id="dp3" data-date="2015-03-06" data-date-format="yyyy-mm-dd">
+        					<input class="form-control" size="16" type="text" value="2015-03-06">
+        					<span class="input-group-addon"><span class="add-on glyphicon glyphicon-th"></span></span>
+        					</div>
+						    <script type="text/javascript">
+ 							     $(function(){
+     						     $('#dp3').datepicker({
+						          format: 'yyyy-mm-dd'
+      							  });
+      							});
+    						</script>
+						</div>
 						</div>
 						<div class="form-group">
 							 <label for="exampleInputFile">File input</label><input type="file" id="exampleInputFile" />
@@ -35,15 +39,18 @@
 						</div>
 						<div class="checkbox">
 							 <label><input type="checkbox" /> Check me out</label>
-						</div> <button type="submit" class="btn btn-default">Submit</button>
+						</div> 
+						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
 				</div>
 				<div class="col-md-6 column">
+				<div id="addressOnText">
+				</div>
+				    <div id="titleOnText">
+				    </div>
+				    
 					<p>
 						Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
 					</p>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
