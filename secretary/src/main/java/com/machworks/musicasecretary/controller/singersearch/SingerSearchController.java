@@ -28,6 +28,8 @@ public class SingerSearchController extends AbsSecretaryController {
 	@Override
 	protected void serviceProc() {
 		setScript("js/search/search.js");
+		setCss("css/search/card.css");
+		setCss("css/search/typeahead.css");
 	}
 	
 	@RequestMapping(value="/load", method = RequestMethod.GET,  produces=MediaType.APPLICATION_JSON_VALUE)

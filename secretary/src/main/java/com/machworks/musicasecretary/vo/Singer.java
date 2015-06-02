@@ -13,16 +13,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "singers")
 public class Singer {
 	@Getter
-	private final String id;
+	private String id;
 	@Getter
-	private final String representiveName;
+	private String representiveName;
 	@Getter
-	private final String alphabeticName;
+	private String alphabeticName;
 	@Getter
-	private final String part;
+	private String part;
 	@Getter
-	private final Boolean isProfessional;
+	private Boolean isProfessional;
 	@Getter
-	private final Map<String, Object> attributes;
+	private Map<String, Object> attributes;
 
 }

@@ -1,9 +1,11 @@
 package com.machworks.musicasecretary.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.machworks.musicasecretary.dao.singersearch.SingerDao;
 
+@Qualifier
 public class DaoFactoryMongoImpl implements DaoFactory {
 
 	private SingerDao singerDao;

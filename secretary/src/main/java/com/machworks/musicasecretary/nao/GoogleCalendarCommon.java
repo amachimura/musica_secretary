@@ -35,6 +35,8 @@ public class GoogleCalendarCommon {
 	private static final String PATH_TO_JSON = "C:\\Users\\works\\Documents\\workspaces\\musica\\secretary\\src\\main\\java\\com\\machworks\\musicasecretary\\nao\\musician-secretary-9a1d97821c53.json";
 	private File jsonFile = new File(PATH_TO_JSON);
 	private static final String CALENDAR_NAME = "笹の葉合唱団";
+	
+	private static final String PUBLIC_API_KEY = "AIzaSyAb6mRsL9Nsy9QQD4L8qYkQ8B7MdusbKKo";
 
 	private static HttpTransport HTTP_TRANSPORT;
 	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
@@ -91,7 +93,7 @@ public class GoogleCalendarCommon {
 	/**
 	 * 認証URL取得
 	 */
-	public String getGoogleOAuthURL() throws IOException,
+	public String getGoogleOAuthURL(String additionalUrl) throws IOException,
 	GeneralSecurityException {
 		GoogleAuthorizationCodeFlow flow = getFlow();
 		return flow.newAuthorizationUrl().setRedirectUri(REDIRECT_URL).build();
